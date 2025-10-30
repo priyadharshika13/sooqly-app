@@ -1,0 +1,125 @@
+{
+  "info": {
+    "name": "Sooqly API (MVP)",
+    "_postman_id": "c3c3a111-aaaa-bbbb-cccc-1234567890ab",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "{{API_BASE}}/health"
+      }
+    },
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "url": "{{API_BASE}}/auth/register",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"user1@sooqly.app\", \"password\": \"User@123\"}"
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Login (form)",
+      "request": {
+        "method": "POST",
+        "url": "{{API_BASE}}/auth/login",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "username",
+              "value": "admin@sooqly.app"
+            },
+            {
+              "key": "password",
+              "value": "Admin@123"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Products",
+      "request": {
+        "method": "GET",
+        "url": "{{API_BASE}}/products/"
+      }
+    },
+    {
+      "name": "Admin Create Product",
+      "request": {
+        "method": "POST",
+        "url": "{{API_BASE}}/admin/products",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Test Fish"
+            },
+            {
+              "key": "price",
+              "value": "199"
+            },
+            {
+              "key": "category",
+              "value": "Fishes"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{ADMIN_TOKEN}}"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Place Order",
+      "request": {
+        "method": "POST",
+        "url": "{{API_BASE}}/orders/",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"items\": [{\"product_id\": 1, \"qty\": 2}]}"
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{USER_TOKEN}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_BASE",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "ADMIN_TOKEN",
+      "value": ""
+    },
+    {
+      "key": "USER_TOKEN",
+      "value": ""
+    }
+  ]
+}

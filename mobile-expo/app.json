@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "SooqlyMobile",
+    "slug": "sooqly-mobile",
+    "sdkVersion": "51.0.0",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ]
+  }
+}

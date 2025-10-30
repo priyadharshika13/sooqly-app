@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Proforma Invoice - Pragatham</title>
+  <style>
+    body { font-family: Arial, sans-serif; color:#111; }
+    .wrap { max-width: 800px; margin: 40px auto; padding: 24px; border:1px solid #ddd; border-radius:12px; }
+    h1 { margin:0 0 8px; }
+    .muted { color:#666; }
+    table { width:100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:left; }
+    th { background:#f4f6f8; }
+    .right { text-align:right; }
+    .total { font-weight:700; }
+    .badge { display:inline-block; padding:4px 10px; border-radius:999px; background:#e8fff2; color:#1b5e20; font-size:12px; border:1px solid #b6e3c1;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Proforma Invoice</h1>
+    <p class="muted">Pragatham Solution and Services OPC Pvt. Ltd.</p>
+    <p><strong>Bill To:</strong> ___________________________<br/>
+       <strong>Date:</strong> ___________________<br/>
+       <strong>PI No:</strong> PRG-PI-{{NUM}}</p>
+    <table>
+      <thead><tr><th>Description</th><th class="right">Amount (₹)</th></tr></thead>
+      <tbody>
+        <tr><td>Project Advance – Grocery App (Web + Mobile + API)</td><td class="right">1,50,000.00</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td class="right total">Total</td><td class="right total">1,50,000.00</td></tr>
+      </tfoot>
+    </table>
+    <p><span class="badge">Payment Due on Acceptance</span></p>
+    <h3>Payment Options</h3>
+    <ul>
+      <li><strong>Razorpay Link:</strong> Generate via Admin → “Pay Advance” button (checkout modal).</li>
+      <li><strong>UPI:</strong> pragatham@okaxis (example – replace with your actual UPI)</li>
+      <li><strong>Bank Transfer:</strong> Account Name: Pragatham Solution and Services OPC Pvt. Ltd., A/C No: ___________, IFSC: ___________, Bank: ___________</li>
+    </ul>
+    <p class="muted">* This is a proforma invoice. A tax invoice will be issued upon receipt.</p>
+  </div>
+</body>
+</html>

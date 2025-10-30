@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: sooqly
+      POSTGRES_USER: sooqly
+      POSTGRES_PASSWORD: sooqly
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg2://sooqly:sooqly@db:5432/sooqly
+      SECRET_KEY: change-me-in-prod
+      CORS_ORIGINS: http://localhost:5173, http://127.0.0.1:5173, http://localhost:8081, http://localhost:19006
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+volumes:
+  pgdata:
