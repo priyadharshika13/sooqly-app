@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import NavBar from '../NavBar'
-import { saveCart, loadCart } from '../../state/cart'
+// import { saveCart, loadCart } from '../../state/cart'
 import { Link, useNavigate } from 'react-router-dom'
 
 const API = import.meta.env.VITE_API || 'http://localhost:8000'
