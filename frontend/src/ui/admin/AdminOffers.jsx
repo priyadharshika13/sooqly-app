@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
 const ORANGE = '#f97316'
 
 export default function AdminOffers(){

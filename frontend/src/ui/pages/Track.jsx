@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import NavBar from '../NavBar'
 import TrackingMap from '../TrackingMap'
 
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
 
 export default function Track(){
   const [orderId, setOrderId] = useState('')

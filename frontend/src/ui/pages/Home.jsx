@@ -6,7 +6,7 @@ import NavBar from '../NavBar'
 import { Link, useNavigate } from 'react-router-dom'
 import { saveCart, loadCart } from '../../state/cart'
 
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
 const FILTERS = ["Fast Delivery","Rating 4.0+","Less than ₹300","New on Sooqly"]
 const TABS = ["All","Fishes","Spices","Add-ons"]
 

@@ -111,7 +111,7 @@
   "variable": [
     {
       "key": "API_BASE",
-      "value": "http://localhost:8000"
+      "value": "https://sooqly-app.vercel.app/"
     },
     {
       "key": "ADMIN_TOKEN",

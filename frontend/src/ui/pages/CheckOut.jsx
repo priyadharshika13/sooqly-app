@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import NavBar from '../NavBar'
 import { loadCart, clearCart, saveCart } from '../../state/cart'
 
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
 const ORANGE = '#f97316'
 
 export default function Checkout(){

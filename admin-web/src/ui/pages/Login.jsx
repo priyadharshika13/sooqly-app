@@ -4,7 +4,7 @@ import axios from 'axios'
 import NavBar from '../NavBar'
 import { useNavigate } from 'react-router-dom'
 
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
 
 export default function Login(){
   const [email, setEmail] = useState('')

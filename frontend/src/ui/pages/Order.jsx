@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 import NavBar from '../NavBar'
 
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
 const ORANGE = '#f97316'
 
 export default function Order(){

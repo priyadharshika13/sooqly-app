@@ -12,7 +12,7 @@ Auth quick test:
 - Login: POST /auth/login (form fields: username, password) → Bearer token
 Admin user: admin@sooqly.app / Admin@123
 ```bash
-curl -X POST http://localhost:8000/auth/login -d "username=admin@sooqly.app&password=Admin@123"
+curl -X POST https://sooqly-app.vercel.app//auth/login -d "username=admin@sooqly.app&password=Admin@123"
 ```
 Key endpoints:
 - GET /products?fast=&rating_gte=&price_lte=&is_new=&tag=
