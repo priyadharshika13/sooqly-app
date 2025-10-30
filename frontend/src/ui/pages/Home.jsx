@@ -17,10 +17,10 @@ export default function Home(){
   const [products, setProducts] = useState([])
   const [offers, setOffers] = useState([])
   const [recipes, setRecipes] = useState([])
-  // const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([])
   const [token, setToken] = useState(localStorage.getItem('sooqly_token'))
       const navigate = useNavigate()
-      const [cart, setCart] = useState(loadCart())
+      // const [cart, setCart] = useState(loadCart())
       useEffect(()=>{ saveCart(cart) }, [cart])
 
   // panels under a product card
@@ -218,7 +218,7 @@ export default function Home(){
         {/* Cart bar */}
         <div className="cart">
           <strong>{totalQty} items • ₹ {totalAmt.toFixed(2)}</strong>
-          <div className="btn" onClick={()=>checkout()}>Checkout</div>
+          <div className="btn" onClick={()=>gotoCheckout()}>Checkout</div>
         </div>
       </div>
     </>

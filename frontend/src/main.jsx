@@ -11,6 +11,10 @@ import AdminOffers from './ui/admin/AdminOffers'
 import AdminRecipes from './ui/admin/AdminRecipes'
 import Checkout from './ui/pages/CheckOut'
 import Order from './ui/pages/Order'
+import Register from './ui/pages/Register'
+import AdminOrders from './ui/admin/AdminOrders'
+import AdminUsers from './ui/admin/AdminUSers'
+import Payments from './ui/pages/Payments'
 
 const RequireAuth = ({ children }) => {
   const token = localStorage.getItem('sooqly_token')
@@ -23,6 +27,11 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={<Home />} />
       <Route path="/track" element={<Track />} />
       <Route path="/login" element={<Login />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order/:id" element={<Order />} />
+
+<Route path="/register" element={<Register />} />
+<Route path="/payments" element={<Payments />} />
 
       <Route path="/admin" element={
         <RequireAuth>
@@ -33,8 +42,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="products" element={<AdminProducts />} />
         <Route path="offers" element={<AdminOffers />} />
         <Route path="recipes" element={<AdminRecipes />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/order/:id" element={<Order />} />
+        <Route path="/admin/orders" element={<AdminOrders />} />
+        <Route path="/admin/users" element={<AdminUsers />} />
 
       </Route>
     </Routes>

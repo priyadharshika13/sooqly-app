@@ -33,7 +33,7 @@ export default function NavBar(){
         />
 
         <button onClick={detect} className="chip">📍 {loc ? `${loc.lat}, ${loc.lng}` : 'Detect'}</button>
-      <div className="btn" onClick={gotoCheckout}>Proceed to Checkout</div>
+      {/* <div className="btn" onClick={gotoCheckout}>Proceed to Checkout</div> */}
 
         {logged ? (
           <button className="chip" onClick={()=>{
