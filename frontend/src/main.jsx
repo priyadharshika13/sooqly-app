@@ -13,7 +13,7 @@ import Checkout from './ui/pages/CheckOut'
 import Order from './ui/pages/Order'
 import Register from './ui/pages/Register'
 import AdminOrders from './ui/admin/AdminOrders'
-import AdminUsers from './ui/admin/AdminUSers'
+// import AdminUsers from './ui/admin/AdminUSers'
 import Payments from './ui/pages/Payments'
 
 const RequireAuth = ({ children }) => {
@@ -43,7 +43,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="offers" element={<AdminOffers />} />
         <Route path="recipes" element={<AdminRecipes />} />
         <Route path="/admin/orders" element={<AdminOrders />} />
-        <Route path="/admin/users" element={<AdminUsers />} />
+        {/* <Route path="/admin/users" element={<AdminUsers />} /> */}
 
       </Route>
     </Routes>
