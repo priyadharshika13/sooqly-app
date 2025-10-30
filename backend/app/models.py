@@ -12,6 +12,8 @@ class User(Base):
     hashed_password = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
     orders = relationship("Order", back_populates="user")
+    mobile = Column(String, unique=True, index=True, nullable=True)
+
 
 class Category(Base):
     __tablename__ = "categories"

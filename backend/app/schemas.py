@@ -9,6 +9,9 @@ class UserCreate(BaseModel):
     email: EmailStr
     full_name: Optional[str] = None
     password: str
+    mobile: Optional[str] = None
+
+    
 
 class ProductOut(BaseModel):
     id: int
