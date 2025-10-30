@@ -14,7 +14,7 @@ import Order from './ui/pages/Order'
 import Register from './ui/pages/Register'
 import AdminOrders from './ui/admin/AdminOrders'
 // import AdminUsers from './ui/admin/AdminUSers'
-import Payments from './ui/pages/Payments'
+import Payments from './ui/pages/payments'
 
 const RequireAuth = ({ children }) => {
   const token = localStorage.getItem('sooqly_token')
