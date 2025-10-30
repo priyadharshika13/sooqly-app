@@ -15,7 +15,7 @@ python seed.py
 ## Docker (API + Postgres)
 ```bash
 docker compose up --build -d
-# API → https://sooqly-app.vercel.app/
+# API → https://sooqly-app.vercel.app
 ```
 Set env:
 - `DATABASE_URL=postgresql+psycopg2://user:pass@host:5432/dbname`

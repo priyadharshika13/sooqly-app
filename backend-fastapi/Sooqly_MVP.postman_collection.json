@@ -111,7 +111,7 @@
   "variable": [
     {
       "key": "API_BASE",
-      "value": "https://sooqly-app.vercel.app/"
+      "value": "https://sooqly-app.vercel.app"
     },
     {
       "key": "ADMIN_TOKEN",

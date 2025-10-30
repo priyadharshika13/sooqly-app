@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import NavBar from '../NavBar'
 
-const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app'
 const FILTERS = ["Fast Delivery","Rating 4.0+","Less than ₹300","New on Sooqly"]
 const TABS = ["All","Fishes","Spices","Add-ons"]
 const ORANGE = "#f97316"

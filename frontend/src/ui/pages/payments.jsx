@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import NavBar from '../NavBar'
-const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app'
 
 export default function Payments(){
   const [provider, setProvider] = useState('stripe')

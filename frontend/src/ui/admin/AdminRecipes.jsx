@@ -1,7 +1,7 @@
 // src/ui/admin/AdminRecipes.jsx
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app/'
+const API = import.meta.env.VITE_API || 'https://sooqly-app.vercel.app'
 const ORANGE = '#f97316'
 
 export default function AdminRecipes(){
