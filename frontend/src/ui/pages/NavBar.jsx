@@ -39,11 +39,17 @@ export default function NavBar(){
           <button className="chip" onClick={()=>{
             if(confirm('Logout?')){ localStorage.removeItem('sooqly_token'); navigate(0) }
           }}>👤 Logout</button>
+
         ) : (
           <Link to="/login" className="chip" style={{textDecoration:'none'}}>👤 Login</Link>
         )}
+                {logged ? (
+
           <Link to="/admin" className="chip" style={{textDecoration:'none'}}>👤 Admin</Link>
 
+                ) : (
+          <Link to="/orders" className="chip" style={{textDecoration:'none'}}>👤 Users</Link>
+                )}
         <Link to="/track" className="chip" style={{textDecoration:'none'}}>🗺 Track</Link>
       </div>
     </header>
