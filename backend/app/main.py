@@ -8,7 +8,7 @@ app = FastAPI(title=settings.APP_NAME)
 # origins = [o.strip() for o in settings.CORS_ORIGINS.split(",")]
 origins = [
     "http://localhost:5173",          # Vite dev
-    "https://YOUR_VERCEL_URL"         # <-- replace after you get it
+    "https://sooqly-app.vercel.app"         # <-- replace after you get it
 ]
 app.add_middleware(
     CORSMiddleware,
