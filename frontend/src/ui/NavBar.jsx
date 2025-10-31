@@ -41,6 +41,7 @@ export default function NavBar(){
         ) : (
           <Link to="/login" className="chip" style={{textDecoration:'none'}}>👤 Login</Link>
         )}
+          <Link to="/admin" className="chip" style={{textDecoration:'none'}}>👤 Admin</Link>
 
         <Link to="/track" className="chip" style={{textDecoration:'none'}}>🗺 Track</Link>
       </div>
