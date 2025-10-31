@@ -212,7 +212,11 @@ export default function Home(){
         {/* Footer */}
         <div className="footer">
           <div>© {new Date().getFullYear()} Sooqly</div>
-          <div className="nav"><a href="/">Home</a><a href="/track">Track</a><a href="/login">Login</a></div>
+          <div className="nav">          <Link to="/login" className="chip" style={{textDecoration:'none'}}>👤 Login</Link>
+                    <Link to="/admin" className="chip" style={{textDecoration:'none'}}>👤 Admin</Link>
+          
+                  <Link to="/track" className="chip" style={{textDecoration:'none'}}>🗺 Track</Link>
+          </div>
         </div>
 
         {/* Cart bar */}
